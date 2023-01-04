@@ -1,0 +1,299 @@
+.nav {
+  width: 100%;
+  height: 100px;
+  background-color: brown;
+  padding: 3% 15%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu {
+  width: 45px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.top {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  border-radius: 20px;
+}
+.middle {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  border-radius: 20px;
+}
+.bottom {
+  width: 10px;
+  height: 2px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.logo {
+  position: absolute;
+  right: 15%;
+  color: white;
+  top: 30%;
+}
+
+.small {
+  font-family: monospace;
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: -10px;
+}
+.big {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.slider-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  z-index: 99999;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-content {
+  width: fit-content;
+  height: 40%;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.slider-content > li {
+  cursor: pointer;
+}
+
+.homee {
+  position: absolute;
+  animation: move-in1 1s ease-in;
+}
+.cartt {
+  position: absolute;
+  animation: move-in2 1s ease-in;
+  top: 50%;
+}
+.whatt {
+  position: absolute;
+  animation: move-in3 1s ease-in;
+  top: 70%;
+}
+
+@keyframes move-in1 {
+  0% {
+    opacity: 0.2;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+@keyframes move-in2 {
+  0% {
+    opacity: 0.2;
+    left: 10%;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+@keyframes move-in3 {
+  0% {
+    opacity: 0.2;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+
+.homee:hover::before {
+  content: "";
+  border-radius: 20px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  animation: border-sliding1 4s infinite;
+  position: absolute;
+  margin-left: -16px;
+  top: 25px;
+}
+.cartt:hover::before {
+  content: "";
+  border-radius: 20px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  animation: border-sliding2 4s infinite;
+  position: absolute;
+  margin-left: -20px;
+  top: 25px;
+}
+.whatt:hover::before {
+  content: "";
+  border-radius: 20px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  animation: border-sliding3 4s infinite;
+  position: absolute;
+  margin-left: -20px;
+  top: 25px;
+}
+
+@keyframes border-sliding1 {
+  0% {
+    opacity: 0.2;
+    width: 0px;
+    height: 0.1px;
+  }
+  30% {
+    opacity: 0.7;
+    width: 70px;
+    height: 0.4px;
+  }
+  60% {
+    width: 20px;
+    height: 0.4px;
+  }
+  100% {
+    width: 70px;
+    height: 0.4px;
+  }
+}
+@keyframes border-sliding2 {
+  0% {
+    opacity: 0.2;
+    width: 0px;
+    height: 0.1px;
+  }
+  30% {
+    opacity: 0.7;
+    width: 115px;
+    height: 0.4px;
+  }
+  60% {
+    opacity: 0.7;
+    width: 35px;
+    height: 0.4px;
+  }
+  100% {
+    opacity: 0.7;
+    width: 115px;
+    height: 0.4px;
+  }
+}
+@keyframes border-sliding3 {
+  0% {
+    opacity: 0.2;
+    width: 0px;
+    height: 0.1px;
+  }
+  30% {
+    opacity: 0.7;
+    width: 135px;
+    height: 0.4px;
+  }
+  60% {
+    opacity: 0.7;
+    width: 45px;
+    height: 0.4px;
+  }
+  100% {
+    opacity: 0.7;
+    width: 135px;
+    height: 0.4px;
+  }
+}
+
+.cancel {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 4px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.cancel-top {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+}
+.cancel-bottom {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.cancel:hover {
+  border: none;
+  animation: disappear 1s ease-out;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.cancel:hover > .cancel-top {
+  transition: all 1s;
+  transform: rotate(-45deg);
+  position: relative;
+  z-index: 9;
+  top: 10px;
+}
+.cancel:hover > .cancel-bottom {
+  width: 20px;
+  transition: all 1s;
+  transform: rotate(45deg);
+  position: relative;
+  z-index: 8;
+}
+
+@media (max-width: 769px) {
+  .menu {
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media (max-width: 426px) {
+  .menu {
+    top: 20px;
+  }
+}

@@ -1,0 +1,323 @@
+.header {
+  padding: 3% 15%;
+}
+
+.topp {
+  width: 100%;
+  height: fit-content;
+  margin: 35px 0px 20px;
+}
+
+.container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.height {
+  height: 100px;
+  width: fit-content;
+}
+
+h1 {
+  color: brown;
+}
+
+.pa {
+  color: brown;
+}
+
+h2 {
+  color: white;
+}
+
+.para {
+  color: white;
+}
+
+.shoe-name {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.btn {
+  text-decoration: none;
+  width: 80%;
+  height: 35%;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: brown;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 14px;
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  padding: 10px 25px;
+  font-size: large;
+  width: 100%;
+}
+
+.right {
+  width: 50%;
+}
+
+.shoe-image {
+  width: 330px;
+  height: 330px;
+  object-fit: contain;
+  position: absolute;
+  top: 160px;
+  right: 340px;
+  transform: rotate(315deg);
+  animation: upwards 4s infinite;
+  z-index: 2;
+}
+
+@keyframes upwards {
+  0% {
+    top: 160px;
+  }
+  50% {
+    top: 200px;
+  }
+  100% {
+    top: 160px;
+  }
+}
+
+.arrow {
+  width: 140px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 40px;
+  right: 200px;
+  overflow: hidden;
+}
+
+.arrow > div {
+  height: 8px;
+  background-color: white;
+}
+
+.arrow:hover {
+  transition: all 0.3s;
+  transform: scaleX(1.1);
+  cursor: pointer;
+}
+
+.toppp {
+  margin-left: 48px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 22px;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.middlee {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.bottomm {
+  margin-left: 48px;
+  transform: rotate(315deg);
+  position: relative;
+  bottom: 22px;
+  width: 35px;
+  border-radius: 10px;
+}
+
+.stretch {
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.ball-container {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.active-ball {
+  width: 6px;
+  height: 6px;
+  background-color: burlywood;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active-balll {
+  width: 6px;
+  height: 6px;
+  background-color: brown;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active-ballll {
+  width: 6px;
+  height: 6px;
+  background-color: brown;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#mee {
+  width: 100%;
+  height: fit-content;
+  padding: 3%;
+}
+
+@media (max-width: 1024px) {
+  .arrow {
+    right: 130px;
+  }
+  .shoe-image {
+    right: 300px;
+  }
+  .container {
+    height: 270px;
+    padding: 5%;
+  }
+}
+
+@media (max-width: 821px) {
+  .arrow {
+    width: 90px;
+    height: 80px;
+    top: 365px;
+    right: 120px;
+  }
+  .middlee {
+    width: 50px;
+    border-radius: 10px;
+  }
+  .bottomm {
+    margin-left: 22px;
+    bottom: 16px;
+    width: 35px;
+  }
+  .toppp {
+    margin-left: 22px;
+    top: 16px;
+    width: 35px;
+  }
+  .shoe-image {
+    right: 140px;
+  }
+}
+
+@media (max-width: 695px) {
+  .shoe-name {
+    height: 92px;
+  }
+  .shoe-name > h2 {
+    max-width: 130px;
+  }
+  .shoe-image {
+    right: 135px;
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 545px) {
+  .container {
+    height: 470px;
+    align-items: flex-end;
+  }
+  .left {
+    height: fit-content;
+    align-items: center;
+    position: relative;
+    top: -20px;
+  }
+  .arrow {
+    top: 525px;
+    right: 100px;
+  }
+  .shoe-image {
+    right: 135px;
+    margin-top: 20px;
+  }
+  .stretch {
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 426px) {
+  .arrow {
+    top: 525px;
+    right: 45px;
+  }
+  .shoe-image {
+    right: 80px;
+    margin-top: 20px;
+    width: 280px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 376px) {
+  .shoe-image {
+    right: 70px;
+    width: 250px;
+  }
+  .shoe-name > h2 {
+    font-size: larger;
+  }
+  .btn {
+    padding: 8px 17px;
+    font-size: unset;
+  }
+  .btn:hover {
+    transition: all 0.5s;
+    padding: 9px 18px;
+    font-size: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 321px) {
+  .container {
+    height: 350px;
+  }
+  .btn {
+    font-size: small;
+  }
+  .btn:hover {
+    font-size: small;
+  }
+  .shoe-image {
+    right: 95px;
+    width: 170px;
+    margin-top: -15px;
+  }
+  .arrow {
+    top: 425px;
+  }
+}

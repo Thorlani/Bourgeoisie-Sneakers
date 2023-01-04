@@ -1,0 +1,130 @@
+.wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.title {
+  margin: 2% 4%;
+  padding: 2%;
+  text-align: center;
+  color: brown;
+  cursor: pointer;
+}
+
+.lifestyle-active {
+  border-bottom: 1.5px solid brown;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+}
+.running-active {
+  border-bottom: 1.5px solid brown;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+}
+.tennis-active {
+  border-bottom: 1.5px solid brown;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+}
+.basketball-active {
+  border-bottom: 1.5px solid brown;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
+}
+
+.boxes {
+  width: 100%;
+  height: fit-content;
+  margin: 10px 0px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-items {
+  width: 150px;
+  height: 100%;
+  padding: 1.5%;
+  background-color: brown;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.arroww {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.arroww > div {
+  height: 4px;
+  background-color: white;
+}
+
+.toop {
+  margin-left: 17px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.mid {
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 8px;
+}
+
+.bott {
+  margin-left: 17px;
+  transform: rotate(315deg);
+  position: relative;
+  bottom: 8px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.item-title {
+  z-index: 99;
+}
+
+.categories-image {
+  position: relative;
+  right: -15px;
+  z-index: 4;
+  object-fit: contain;
+  transform: rotate(20deg);
+}
+
+@media (max-width: 1024px) {
+  .boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .box-items {
+    margin: 15px;
+    padding: 2%;
+  }
+}
+
+@media (max-width: 764px) {
+  .box-items {
+    margin: 15px;
+    padding: 2.5%;
+  }
+}
+
+@media (max-width: 764px) {
+  .box-items {
+    margin: 15px;
+    padding: 5%;
+  }
+}
