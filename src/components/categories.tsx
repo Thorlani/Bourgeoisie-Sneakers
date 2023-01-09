@@ -47,7 +47,7 @@ const Categories = () => {
 
   return (
     <>
-      <div className="wrap">
+      <div id="shopNow" className="wrap">
         <div
           onClick={() => setNum(0)}
           className={`${num === 0 ? "title lifestyle-active" : "title"}`}
@@ -99,7 +99,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -130,7 +132,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -161,7 +165,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[2].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[2].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -192,7 +198,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -223,7 +231,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -259,7 +269,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -290,7 +302,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -321,7 +335,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[2].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[2].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -352,7 +368,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -383,7 +401,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -419,7 +439,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[2].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[2].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -450,7 +472,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -481,7 +505,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[2].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[2].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -512,7 +538,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -543,7 +571,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -579,7 +609,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -610,7 +642,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -641,7 +675,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[2].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[2].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -672,7 +708,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[0].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[0].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">
@@ -703,7 +741,9 @@ const Categories = () => {
               }}
             >
               <div style={{ color: "white" }}>
-                <h4 style={{ fontSize: "large" }}>${collections[1].itemPrice}</h4>
+                <h4 style={{ fontSize: "large" }}>
+                  ${collections[1].itemPrice}
+                </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div className="arroww">

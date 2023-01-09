@@ -6,9 +6,9 @@ import Navbar from "./components/navbar";
 import Offer from "./components/offer";
 
 function App() {
-  const { shopNow } = useSelector((state: any) => state.counter);
-  const { offer } = useSelector((state: any) => state.counter);
-  const { top } = useSelector((state: any) => state.counter);
+  const shopNow = useSelector((state: any) => state.shopNow);
+  const offer = useSelector((state: any) => state.offer);
+  const top = useSelector((state: any) => state.top);
 
   
   

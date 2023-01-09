@@ -1,12 +1,12 @@
 import "./navbar.css";
 import { useState } from "react";
 
-const Navbar = (shopNow: { shopNow: string; offer: string; top: string }) => {
+const Navbar = (props: { shopNow: string; offer: string; top: string }) => {
   const [showNav, setShowNav] = useState(false);
 
-  const link2 = shopNow.shopNow;
-  const link1 = shopNow.offer;
-  const link3 = shopNow.top;
+  const link2 = props.shopNow;
+  const link1 = props.offer;
+  const link3 = props.top;
 
   return (
     <nav className="nav">
