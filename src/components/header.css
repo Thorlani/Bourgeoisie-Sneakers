@@ -44,7 +44,6 @@
   height: 5px;
   background-color: white;
   border-radius: 50%;
-
 }
 
 .mycart .num {
@@ -62,7 +61,8 @@
 
 .mycart .num p {
   font-size: x-small;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
@@ -336,6 +336,9 @@ h2 {
     margin-top: 20px;
     width: 280px;
     overflow: hidden;
+  }
+  h1 {
+    font-size: x-large;
   }
 }
 
