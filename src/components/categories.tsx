@@ -3,8 +3,16 @@ import { useState } from "react";
 import nike270 from "../assets/nike270.webp";
 import waffles from "../assets/waffles.webp";
 import legend from "../assets/legend.png";
+import { useDispatch, useSelector } from "react-redux";
+import { legendOrder, airmaxOrder, wafflesOrder } from "../redux/shoeAction";
 
 const Categories = () => {
+  const airmaxPrice = useSelector((state: any) => state.shoes.airmax.itemPrice);
+  const wafflesPrice = useSelector(
+    (state: any) => state.shoes.waffles.itemPrice
+  );
+  const legendPrice = useSelector((state: any) => state.shoes.legend.itemPrice);
+
   const [num, setNum] = useState(0);
 
   type collectionDetails = [
@@ -28,22 +36,24 @@ const Categories = () => {
   const collections: collectionDetails = [
     {
       name: "Nike Legend Essential",
-      itemPrice: 135,
+      itemPrice: legendPrice,
       imgSrc: legend,
     },
     {
       name: "Nike Air Max 270",
-      itemPrice: 159,
+      itemPrice: airmaxPrice,
       imgSrc: nike270,
     },
     {
       name: "Nike Waffle One SE",
-      itemPrice: 120,
+      itemPrice: wafflesPrice,
       imgSrc: waffles,
     },
   ];
 
   // const randomItem = collections[Math.floor(Math.random() * collections.length)]
+
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -100,11 +110,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -133,11 +143,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -166,11 +176,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[2].itemPrice}
+                  N{collections[2].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(wafflesOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -199,11 +209,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -232,11 +242,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -270,11 +280,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -303,11 +313,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -336,11 +346,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[2].itemPrice}
+                  N{collections[2].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(wafflesOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -369,11 +379,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -402,11 +412,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -440,11 +450,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[2].itemPrice}
+                  N{collections[2].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(wafflesOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -473,11 +483,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -506,11 +516,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[2].itemPrice}
+                  N{collections[2].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(wafflesOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -539,11 +549,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -572,11 +582,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -610,11 +620,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -643,11 +653,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -676,11 +686,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[2].itemPrice}
+                  N{collections[2].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(wafflesOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -709,11 +719,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[0].itemPrice}
+                  N{collections[0].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(legendOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>
@@ -742,11 +752,11 @@ const Categories = () => {
             >
               <div style={{ color: "white" }}>
                 <h4 style={{ fontSize: "large" }}>
-                  ${collections[1].itemPrice}
+                  N{collections[1].itemPrice}
                 </h4>
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
-              <div className="arroww">
+              <div onClick={() => dispatch(airmaxOrder())} className="arroww">
                 <div className="toop"></div>
                 <div className="mid"></div>
                 <div className="bott"></div>

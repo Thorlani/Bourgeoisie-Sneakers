@@ -1,12 +1,13 @@
 import "./navbar.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
-const Navbar = (props: { shopNow: string; offer: string; top: string }) => {
+const Navbar = () => {
+  const shopNow = useSelector((state: any) => state.url.shopNow);
+  const offer = useSelector((state: any) => state.url.offer);
+  const top = useSelector((state: any) => state.url.top);
+
   const [showNav, setShowNav] = useState(false);
-
-  const link2 = props.shopNow;
-  const link1 = props.offer;
-  const link3 = props.top;
 
   return (
     <nav className="nav">
@@ -26,7 +27,7 @@ const Navbar = (props: { shopNow: string; offer: string; top: string }) => {
               <a
                 onClick={() => setShowNav(!showNav)}
                 style={{ textDecoration: "none", color: "white" }}
-                href={`${"#" + link3}`}
+                href={`${"#" + top}`}
               >
                 Home
               </a>
@@ -35,7 +36,7 @@ const Navbar = (props: { shopNow: string; offer: string; top: string }) => {
               <a
                 onClick={() => setShowNav(!showNav)}
                 style={{ textDecoration: "none", color: "white" }}
-                href={`${"#" + link2}`}
+                href={`${"#" + shopNow}`}
               >
                 Shop Now
               </a>
@@ -44,7 +45,7 @@ const Navbar = (props: { shopNow: string; offer: string; top: string }) => {
               <a
                 onClick={() => setShowNav(!showNav)}
                 style={{ textDecoration: "none", color: "white" }}
-                href={`${"#offer"}`}
+                href={`${"#" + offer}`}
               >
                 What we offer
               </a>

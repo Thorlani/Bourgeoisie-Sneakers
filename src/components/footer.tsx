@@ -1,9 +1,10 @@
-const Footer = (shopNow: { shopNow: string; offer: string; top: string }) => {
+import { useSelector } from "react-redux";
 
-  const link2 = shopNow.shopNow;
-  const link1 = shopNow.offer;
-  const link3 = shopNow.top;
-  
+const Footer = () => {
+  const shopNow = useSelector((state: any) => state.url.shopNow);
+  const offer = useSelector((state: any) => state.url.offer);
+  const top = useSelector((state: any) => state.url.top);
+ 
   return (
     <div
       style={{
@@ -26,7 +27,7 @@ const Footer = (shopNow: { shopNow: string; offer: string; top: string }) => {
         <li style={{ marginBottom: "20px", listStyle: "none" }}>
           <a
             style={{ textDecoration: "none", color: "white" }}
-            href={`${"#" + link1}`}
+            href={`${"#" + offer}`}
           >
             What we offer
           </a>
@@ -34,7 +35,7 @@ const Footer = (shopNow: { shopNow: string; offer: string; top: string }) => {
         <li style={{ marginBottom: "20px", listStyle: "none" }}>
           <a
             style={{ textDecoration: "none", color: "white" }}
-            href={`${"#" + link2}`}
+            href={`${"#" + shopNow}`}
           >
             Shop now
           </a>
@@ -42,7 +43,7 @@ const Footer = (shopNow: { shopNow: string; offer: string; top: string }) => {
         <li style={{ marginBottom: "20px", listStyle: "none" }}>
           <a
             style={{ textDecoration: "none", color: "white" }}
-            href={`${"#" + link3}`}
+            href={`${"#" + top}`}
           >
             Go to Home
           </a>

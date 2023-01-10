@@ -1,0 +1,89 @@
+.form-area {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-area h3 {
+    color: brown;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.form-area div p {
+    color: brown;
+    font-size: small;
+}
+
+form {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: brown;
+}
+
+form .amount p {
+    text-indent: 5px;
+    width: 220px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 2px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    text-indent: 5px;
+    width: 220px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: brown;
+    font-size: small;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+button {
+    width: 120px;
+    height: 25px;
+    border: none;
+    background-color: brown;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.orderr {
+    margin-top: 10px;
+}
+
+.list-itemm {
+    color: brown;
+    font-size: small;
+    text-align: left;
+    list-style: none;
+    margin-bottom: 5px;
+}

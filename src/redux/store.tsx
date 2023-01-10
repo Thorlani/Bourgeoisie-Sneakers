@@ -1,7 +1,8 @@
 // import { configureStore } from "@reduxjs/toolkit";
 // import counterReducer from "./counter";
-import { legacy_createStore as createStore} from 'redux'
+import { legacy_createStore as createStore, combineReducers } from "redux";
 import urlReducer from "./urlReducer";
+import { shoeOrders } from "./shoeReducer";
 
 // export default configureStore({
 //   reducer: {
@@ -9,6 +10,11 @@ import urlReducer from "./urlReducer";
 //   },
 // });
 
-const store = createStore(urlReducer)
+const rootReducer = combineReducers({
+  url: urlReducer,
+  shoes: shoeOrders,
+});
 
-export default store
+const store = createStore(rootReducer);
+
+export default store;

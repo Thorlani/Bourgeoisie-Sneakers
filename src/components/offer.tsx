@@ -1,8 +1,9 @@
+import { useSelector } from "react-redux";
 import "./offer.css";
 
-const Offer = (offer: {offer: string}) => {
-
-  const link = offer.offer
+const Offer = () => {
+  const offer = useSelector((state: any) => state.url.offer);
+  
   type offers = {
     h2: string;
     p: string;
@@ -14,7 +15,7 @@ const Offer = (offer: {offer: string}) => {
   };
   return (
     <div
-      id={link}
+      id={offer}
       style={{
         width: "100%",
         height: "fit-content",

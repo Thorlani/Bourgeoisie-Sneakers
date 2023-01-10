@@ -1,8 +1,11 @@
 import nike270 from "../../assets/nike270.webp";
 import waffles from "../../assets/waffles.webp";
 import legend from "../../assets/legend.png";
+import { useSelector } from "react-redux";
 
-const HeaderContainer = (props: { url: string; num: number; setNum: any }) => {
+const HeaderContainer = (props: { num: number; setNum: any }) => {
+  const shopNow = useSelector((state: any) => state.url.shopNow);
+
   const increment = () => {
     if (props.num === 0) {
       props.setNum(props.num + 1);
@@ -22,7 +25,7 @@ const HeaderContainer = (props: { url: string; num: number; setNum: any }) => {
               (props.num === 2 && <h2>Nike Legend Essential</h2>)}
             {/* <p className="para">Men's shoes</p> */}
           </div>
-          <a href={`${"#" + props.url}`} className="btn">
+          <a href={`${"#" + shopNow}`} className="btn">
             Shop now
           </a>
         </div>
