@@ -44,7 +44,6 @@ const FormContainer = () => {
 
   const onClose = () => {
     alert("Window closed.");
-    window.location.reload()
   };
 
   const PaystackHookExample = () => {
