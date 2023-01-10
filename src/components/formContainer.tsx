@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { handlePayment } from "../paystackInterface";
+import { usePaystackPayment } from "react-paystack";
 import "./formContainer.css";
 
 const FormContainer = () => {
@@ -29,9 +29,37 @@ const FormContainer = () => {
     email: "",
   });
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    handlePayment(data.email, totalAmount);
+  const config = {
+    reference: new Date().getTime().toString(),
+    email: data.email,
+    amount: totalAmount * 100,
+    publicKey: "pk_test_12b0dffff067195496aa30c77fab55d95be53818",
+  };
+
+  const onSuccess = () => {
+    window.location.reload()
+    let message = "Payment complete!"
+    alert(message);
+  };
+
+  const onClose = () => {
+    alert("Window closed.");
+    window.location.reload()
+  };
+
+  const PaystackHookExample = () => {
+    const initializePayment = usePaystackPayment(config);
+    return (
+      <div>
+        <button
+          onClick={() => {
+            initializePayment(onSuccess, onClose);
+          }}
+        >
+          Purchase
+        </button>
+      </div>
+    );
   };
 
   const handleChange = (e: { target: { name: any; value: any } }) => {
@@ -68,7 +96,7 @@ const FormContainer = () => {
           )}
         </div>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={() => {}}>
         <div className="amount">
           <label htmlFor="Amount">Amount to be paid (NGN)</label>
           <p>{totalAmount}</p>
@@ -83,7 +111,11 @@ const FormContainer = () => {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Purchase</button>
+        {totalAmount === 0 && data.email === "" ? (
+          <button>Purchase</button>
+        ) : (
+          <PaystackHookExample />
+        )}
       </form>
     </div>
   );
