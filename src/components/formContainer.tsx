@@ -42,11 +42,13 @@ const FormContainer = () => {
   };
 
   const onSuccess = () => {
+    window.location.reload()
     let message = "Payment complete!";
     alert(message);
   };
 
   const onClose = () => {
+    window.location.reload()
     alert("Window closed.");
   };
 
