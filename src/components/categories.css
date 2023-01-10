@@ -68,28 +68,14 @@
   background-color: white;
 }
 
-.toop {
-  margin-left: 17px;
-  transform: rotate(45deg);
-  position: relative;
-  top: 8px;
-  border-radius: 10px;
-  width: 40%;
-}
-
 .mid {
   border-radius: 10px;
   width: 60%;
-  margin-left: 8px;
-}
-
-.bott {
-  margin-left: 17px;
-  transform: rotate(315deg);
-  position: relative;
-  bottom: 8px;
-  border-radius: 10px;
-  width: 40%;
+  margin-left: 5px;
+  color: white;
+  font-weight: 560;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .item-title {

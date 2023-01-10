@@ -1,7 +1,12 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { usePaystackPayment } from "react-paystack";
 import "./formContainer.css";
+import {
+  cancelAirmaxOrder,
+  cancelWafflesOrder,
+  cancelLegendOrder,
+} from "../redux/shoeAction";
 
 const FormContainer = () => {
   const payment = useSelector((state: any) => state.url.payment);
@@ -37,8 +42,7 @@ const FormContainer = () => {
   };
 
   const onSuccess = () => {
-    window.location.reload()
-    let message = "Payment complete!"
+    let message = "Payment complete!";
     alert(message);
   };
 
@@ -55,7 +59,7 @@ const FormContainer = () => {
             initializePayment(onSuccess, onClose);
           }}
         >
-          Purchase
+          Pay now
         </button>
       </div>
     );
@@ -67,30 +71,75 @@ const FormContainer = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const dispatch = useDispatch();
+
   return (
     <div id={payment} className="header form-area">
       <h3>Payment</h3>
       <div>
         <p>
-          You currently have {airmaxQty + wafflesQty + legendQty} items in your
-          cart
+          You currently have {airmaxQty + wafflesQty + legendQty} item
+          {airmaxQty + wafflesQty + legendQty > 1 && "s"} in your cart
         </p>
         <div className="orderr">
           {legendQty > 0 && (
-            <ul>
+            <ul
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "220px",
+                marginBottom: "10px",
+              }}
+            >
               <li className="list-itemm">
                 Nike Legend Essential x {legendQty}
               </li>
+              <button
+                onClick={() => dispatch(cancelLegendOrder())}
+                style={{ fontSize: "x-small", width: "50px" }}
+              >
+                remove item
+              </button>
             </ul>
           )}
           {airmaxQty > 0 && (
-            <ul>
+            <ul
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "220px",
+                marginBottom: "10px",
+              }}
+            >
               <li className="list-itemm">Nike Air Max 270 x {airmaxQty}</li>
+              <button
+                onClick={() => dispatch(cancelAirmaxOrder())}
+                style={{ fontSize: "x-small", width: "50px" }}
+              >
+                remove item
+              </button>
             </ul>
           )}
           {wafflesQty > 0 && (
-            <ul>
+            <ul
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                width: "220px",
+                marginBottom: "10px",
+              }}
+            >
               <li className="list-itemm">Nike Waffle One SE x {wafflesQty}</li>
+              <button
+                onClick={() => dispatch(cancelWafflesOrder())}
+                style={{ fontSize: "x-small", width: "50px" }}
+              >
+                remove item
+              </button>
             </ul>
           )}
         </div>
@@ -110,8 +159,17 @@ const FormContainer = () => {
             onChange={handleChange}
           />
         </div>
-        {totalAmount === 0 && data.email === "" ? (
-          <button>Purchase</button>
+        {totalAmount === 0 ? (
+          <button
+            type="button"
+            style={{
+              backgroundColor: "white",
+              color: "brown",
+              border: "1px solid brown",
+            }}
+          >
+            Purchase an item
+          </button>
         ) : (
           <PaystackHookExample />
         )}

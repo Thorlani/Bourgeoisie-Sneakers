@@ -1,4 +1,11 @@
-import { AIRMAX, WAFFLES, LEGEND } from "./shoeType";
+import {
+  AIRMAX,
+  WAFFLES,
+  LEGEND,
+  CANCELAIRMAX,
+  CANCELLEGEND,
+  CANCELWAFFLES,
+} from "./shoeType";
 
 const initialState = {
   airmax: {
@@ -39,6 +46,30 @@ export const shoeOrders = (state = initialState, action: any) => {
         legend: {
           ...state.legend,
           quantity: state.legend.quantity + action.payload,
+        },
+      };
+    case CANCELAIRMAX:
+      return {
+        ...state,
+        airmax: {
+          ...state.airmax,
+          quantity: state.airmax.quantity - action.payload,
+        },
+      };
+    case CANCELWAFFLES:
+      return {
+        ...state,
+        waffles: {
+          ...state.waffles,
+          quantity: state.waffles.quantity - action.payload,
+        },
+      };
+    case CANCELLEGEND:
+      return {
+        ...state,
+        legend: {
+          ...state.legend,
+          quantity: state.legend.quantity - action.payload,
         },
       };
     default:

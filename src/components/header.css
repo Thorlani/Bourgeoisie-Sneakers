@@ -15,7 +15,7 @@
   width: 25px;
   height: 25px;
   background-color: brown;
-  position: relative;
+  position: fixed;
   padding: 4px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;

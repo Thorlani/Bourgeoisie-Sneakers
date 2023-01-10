@@ -115,9 +115,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -148,9 +146,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+              <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -181,9 +177,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(wafflesOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -214,9 +208,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -247,9 +239,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -285,9 +275,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -318,9 +306,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -351,9 +337,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(wafflesOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -384,9 +368,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -417,9 +399,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -455,9 +435,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(wafflesOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -488,9 +466,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -521,9 +497,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(wafflesOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -554,9 +528,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -587,9 +559,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -625,9 +595,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -658,9 +626,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -691,9 +657,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(wafflesOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -724,9 +688,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(legendOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
@@ -757,9 +719,7 @@ const Categories = () => {
                 <p style={{ fontSize: "small" }}>price</p>
               </div>
               <div onClick={() => dispatch(airmaxOrder())} className="arroww">
-                <div className="toop"></div>
-                <div className="mid"></div>
-                <div className="bott"></div>
+                <p className="mid">Buy</p>
               </div>
             </div>
           </li>
