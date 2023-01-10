@@ -55,6 +55,7 @@ const FormContainer = () => {
     return (
       <div>
         <button
+          type="button"
           onClick={() => {
             initializePayment(onSuccess, onClose);
           }}
